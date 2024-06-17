@@ -1,0 +1,54 @@
+h2{
+    text-align: center;
+    color: purple;
+    font-family: cursive;
+}
+h1{
+  text-align: center;
+  font-family: cursive;
+}
+p{
+  font-size: large;
+  font-family: cursive;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    font-size: 17px;
+  }
+  
+  .container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .container .column img{
+    height: 400px;
+  }
+  .container .content {
+    position: relative;
+    bottom: 0;
+    background: rgb(221, 204, 248); /* Fallback color */
+    background: rgba(130, 9, 134, 0.562); /* Black background with 0.5 opacity */
+    color: #111010;
+    width: 100%;
+    padding: 20px;
+    height: 10% ;
+  }
